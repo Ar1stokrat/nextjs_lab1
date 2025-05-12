@@ -1,3 +1,10 @@
-export default function HomePage(){
-  return <h1> Головна сторінка</h1>
+import styles from './components/Menu.module.scss';
+
+export default function Menu() {
+  return (
+    <nav className={styles.menu}>
+      <a href="/">Головна</a>
+      <a href="/articles">Статті</a>
+    </nav>
+  );
 }
